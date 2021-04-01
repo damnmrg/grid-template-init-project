@@ -1,0 +1,16 @@
+.skills {
+  padding: 10px;
+  margin-bottom: 30px;
+
+  &__container {
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-auto-rows: calc(33.3333vh - 13.333px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+}
