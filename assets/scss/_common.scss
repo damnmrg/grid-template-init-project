@@ -1,15 +1,18 @@
 * {
   background-origin: border-box;
 }
- html {
-   font-size: 16px;
-   font-family: "Roboto", sans-serif;
-   overflow-y: scroll;
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
 }
+
 a {
-  color: $color-light;
+  color: #ffffff;
   text-decoration: none;
 }
+
 h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
@@ -18,29 +21,36 @@ h1 {
   font-size: 3.75rem;
   line-height: 1.25em;
 }
+
 .btn {
   min-width: 250px;
-  border: 2px solid $color-light;
+  border: 2px solid #ffffff;
   display: block;
   font-size: 1.125rem;
   text-align: center;
   padding: 18px 20px;
   letter-spacing: 0.1em;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .btn--light {
-  border: 2px solid $color-light;
+  border: 2px solid #ffffff;
   min-width: 250px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .btn--light:hover {
-  background-color: $color-accent;
+  background-color: #d66926;
 }
+
 .btn--primary {
-  border: 2px solid $color-primary;
+  border: 2px solid #2d3651;
   min-width: 350px;
-  background-color: rgba(red 0.8);
+  background-color: rgba(45, 54, 81, 0.8);
 }
+
 .btn--primary:hover {
-  background-color: $color-accent;
+  background-color: #d66926;
 }

@@ -1,4 +1,4 @@
-@import "../../libs/normalize-scss/sass/normalize";
+@import "../../libs/normalize-scss/sass/normalize/import-now";
 
 @import "../../libs/normalize-scss/sass/normalize/import-now";
 @import "skin";
@@ -7,7 +7,7 @@
 @import "mixins-media";
 @import "extends";
 
-@import "common";
+@import "common"; 
 @import "header/header";
 @import "header/header-overlay";
 @import "header/header-menu";
@@ -23,9 +23,6 @@
 @import "sections/section-posts";
 
 @import "footer";
-
-
-
 
 
 

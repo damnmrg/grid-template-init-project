@@ -1,3 +1,18 @@
+@mixin unlist ($m: 0, $p: 0){
+  list-style: none;
+  margin: $m;
+  padding: $p;
+}
+
+@mixin abs-position ($t: 0, $r: 0, $b: 0, $l: 0){
+  position: absolute;
+  margin: 0;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+}
+
 @mixin text-shortener {
   display: block;
   overflow: hidden;
@@ -25,7 +40,7 @@
 
 @mixin block-header {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: $gap / 2;
 
   border-bottom: 1px solid $color-dark;
 }
@@ -42,4 +57,4 @@
   padding: 0;
 
   border: 0;
-}
+}
