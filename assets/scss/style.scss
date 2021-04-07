@@ -7,7 +7,7 @@
 @import "mixins-media";
 @import "extends";
 
-@import "common"; 
+@import "common";
 @import "header/header";
 @import "header/header-overlay";
 @import "header/header-menu";
@@ -16,8 +16,8 @@
 @import "header/header-content";
 
 
-@import "../scss/sections/section-skills/skills";
 @import "../scss/sections/section-skills/skill-item";
+@import "../scss/sections/section-skills/skills";
 @import "sections/section-about";
 @import "sections/section-form";
 @import "sections/section-posts";
@@ -29,8 +29,3 @@
 
 
 
-@media (max-height: 690px) {
-  .skill-item {
-    grid-auto-rows: calc(280px - 13.33333px);
-  }
-}

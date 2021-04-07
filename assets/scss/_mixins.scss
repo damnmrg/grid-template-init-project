@@ -6,7 +6,6 @@
 
 @mixin abs-position ($t: 0, $r: 0, $b: 0, $l: 0){
   position: absolute;
-  margin: 0;
   top: $t;
   bottom: $b;
   left: $l;

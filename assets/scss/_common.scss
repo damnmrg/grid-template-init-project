@@ -1,56 +1,94 @@
 * {
   background-origin: border-box;
 }
-
 html {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-size: $font-size;
+  font-family: $font-main;
   overflow-y: scroll;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+@mixin lg-min {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+@mixin lg-md {
+  @media (max-width: $lg - 1) and (min-width: $md) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: $md - 1) {
+    @content;
+  }
 }
 
+a {
+  color: $color-light;
+  text-decoration: none;
+}
 h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: $font-header;
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.08em;
-  font-size: 3.75rem;
-  line-height: 1.25em;
+  line-height: 1.2em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 .btn {
-  min-width: 250px;
-  border: 2px solid #ffffff;
   display: block;
-  font-size: 1.125rem;
   text-align: center;
-  padding: 18px 20px;
   letter-spacing: 0.1em;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
-
 .btn--light {
-  border: 2px solid #ffffff;
-  min-width: 250px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
 
+  @include lg-min {
+    height: 60px;
+    padding: 18px $gap;
+    min-width: 250px; 
+    font-size: 1.125rem; 
+  }
+  @include lg-md {
+    height: 50px;
+    padding: 14px $gap;
+    min-width: 200px;
+  }
+  @include md {
+    height: 40px;
+    padding: 9px $gap;
+    min-width: 170px;  
+  }
+}
 .btn--light:hover {
-  background-color: #d66926;
+  background-color: $color-accent;
 }
-
 .btn--primary {
-  border: 2px solid #2d3651;
-  min-width: 350px;
-  background-color: rgba(45, 54, 81, 0.8);
-}
+  font-size: 1.125rem;
+  padding: 18px $gap;
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
 
+  @include sm-min {
+    padding: 18px $gap;
+    min-width: 350px;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
 .btn--primary:hover {
-  background-color: #d66926;
+  background-color: $color-accent;
 }
