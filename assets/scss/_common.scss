@@ -1,5 +1,6 @@
 * {
   background-origin: border-box;
+  box-sizing: border-box;
 }
 html {
   font-size: $font-size;
@@ -52,23 +53,23 @@ h1 {
   transition: background-color 0.5s;
 }
 .btn--light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid $color-light;
   background-color: rgba($color-light, 0.1);
 
   @include lg-min {
     height: 60px;
-    padding: 18px $gap;
     min-width: 250px; 
     font-size: 1.125rem; 
   }
   @include lg-md {
     height: 50px;
-    padding: 14px $gap;
     min-width: 200px;
   }
   @include md {
     height: 40px;
-    padding: 9px $gap;
     min-width: 170px;  
   }
 }

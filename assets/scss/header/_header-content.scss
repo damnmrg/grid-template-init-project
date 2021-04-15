@@ -1,7 +1,6 @@
 .header-content {
   position: relative;
   &__title {
-
     @include lg-min {
       margin: 0 0 53px 0;
     }
