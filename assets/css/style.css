@@ -1304,6 +1304,73 @@ h1 {
           justify-content: center;
 }
 
+.about {
+  background-color: #e5e5e5;
+  padding: 100px 0;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 271px;
+  grid-column-gap: 100px;
+  max-width: 1340px;
+  margin: auto;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__content::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 2px;
+  background-color: #2d3651;
+  right: -50px;
+}
+
+.about__image {
+  max-width: 100%;
+  max-height: 480px;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  color: #2d3651;
+}
+
+h2 {
+  display: block;
+  margin-top: 0;
+  letter-spacing: 0.1em;
+  color: #2d3651;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.2em;
+  margin-bottom: 56px;
+  font-size: 2.5rem;
+}
+
 @media (min-width: 576px) {
   .btn--primary {
     padding: 18px 20px;
@@ -1362,6 +1429,39 @@ h1 {
   .skills__container {
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header-navbar__btn {
+    display: block;
+    margin: 0;
+  }
+  .header-menu {
+    background-color: #44596e40;
+    -webkit-box-shadow: -3px 3px 20px -10px #000000;
+            box-shadow: -3px 3px 20px -10px #000000;
+  }
+  .header-navbar__list {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    background-color: #44596ee6;
+    -webkit-box-shadow: -3px 3px 20px -10px #000000;
+            box-shadow: -3px 3px 20px -10px #000000;
   }
 }
 
