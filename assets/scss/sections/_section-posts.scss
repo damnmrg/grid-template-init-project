@@ -1,0 +1,148 @@
+.posts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include lg-md{
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  @include md{
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+}
+.posts__container {
+  max-width: $ul;
+  padding-left: $gap;
+  padding-right: $gap;
+  margin: auto;
+}
+.posts__grid {
+  display: grid;
+  grid-template-areas:
+      "p1 p1 p2 p3"
+      "p4 p5 p6 p6";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: $gap;    
+  padding-bottom: 20px;
+
+  @include lg-md {
+      grid-template-areas:
+          "p1 p1 p2"
+          "p3 p4 p4"
+          "p5 p5 p6";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;    
+  }
+
+  @include md {
+      grid-template-areas:
+          "p1 p2"
+          "p3 p4"
+          "p5 p6";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;    
+  }
+  @include sm {
+      grid-template-areas:
+          "p1"
+          "p2"
+          "p3"
+          "p4"
+          "p5"
+          "p6";
+      grid-template-columns: 1fr;
+      grid-gap: 20px;    
+  }
+      
+}
+.post-item {
+  
+  background-color: #f2f2f2;
+  transition: 0.5s;
+
+  &:hover {
+      background-color: #d8d8d8;
+  }
+ 
+ 
+  &:nth-of-type(1) {
+      grid-area: p1;
+  }
+  &:nth-of-type(2) {
+      grid-area: p2;
+  }
+  &:nth-of-type(3) {
+      grid-area: p3;
+  }
+  &:nth-of-type(4) {
+      grid-area: p4;
+  }
+ &:nth-of-type(5) {
+      grid-area: p5;
+  }
+  &:nth-of-type(6) {
+      grid-area: p6;
+  }
+}
+.post-item:hover img {
+  transform: scale(1.1);
+}
+.post-item:hover h3 {
+  color: $color-primary;
+}
+.post-item:hover p {
+  color: $color-primary;
+}
+.post-item__link {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 300px 1fr;
+
+  
+}
+.post-item__image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+.post-item__image img {
+  width: 100%;
+  transition: transform 0.5s;
+  object-fit: cover;
+}
+
+  
+.post-item__caption {
+  display: grid;
+  align-content: center;
+  padding: $gap;
+}
+.post-item__caption h3 {
+  color: $color-gray;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  transition: color 0.5s;
+
+  @include sm-min {
+      font-size: 1.125rem;
+      letter-spacing: 0.05em;
+  }
+  @include sm {
+      font-size: 1.125rem;
+      letter-spacing: 0.05em;
+  }
+
+}
+.post-item__caption p {
+  letter-spacing: 0;
+  transition: color 0.5s;
+  text-align: center;
+}
+.post__buttom {
+  display: flex;
+  justify-content: center;    
+}
+
