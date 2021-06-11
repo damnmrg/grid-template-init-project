@@ -37,7 +37,7 @@
       position: absolute;
       height: 200px;
       width: 0.5px;
-      background-color: $color-gray;
+      background-color: rgba(99, 117, 136, 0.1);    
       right: -50px;
     }
   }
@@ -51,8 +51,8 @@
 
 p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: $color-gray;

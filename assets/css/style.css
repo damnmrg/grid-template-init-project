@@ -1339,7 +1339,7 @@ h1 {
   position: absolute;
   height: 200px;
   width: 0.5px;
-  background-color: #637588;
+  background-color: rgba(99, 117, 136, 0.1);
   right: -50px;
 }
 
@@ -1356,10 +1356,10 @@ h1 {
 
 p {
   display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+  -webkit-margin-end: 1em;
+          margin-inline-end: 1em;
   -webkit-margin-start: 0px;
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
@@ -1396,6 +1396,7 @@ h2 {
 
 .form-item__input {
   display: block;
+  color: #ffffff;
   height: 60px;
   width: 100%;
   padding-left: 30px;
