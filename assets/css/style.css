@@ -1397,30 +1397,52 @@ h2 {
   transition: background-color 0.5s, border-color 0.5s;
 }
 
-.form-item__input:hover {
+.form-item__input:hover, .form-item__input:focus {
   background-color: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-bottom-color: #ffffff;
+  color: #ffffff;
+  outline: 0;
+}
+
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+  color: #e5e5e5;
+}
+
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+  color: #e5e5e5;
 }
 
 .form-item__input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: #637588;
 }
 
 .form-item__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: #637588;
 }
 
 .form-item__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: #637588;
 }
 
 .form-item__input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: #637588;
 }
 
 .form-item__input::placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: #637588;
 }
 
 .btn-subscribe {
@@ -1658,7 +1680,7 @@ h2 {
 
 @media (min-height: 691px) {
   .skills__container {
-    grid-auto-rows: calc(33.3333vh - 13.333px);
+    grid-auto-rows: calc(33.3333vh - 20px * 0.66666);
   }
 }
 
@@ -1828,7 +1850,7 @@ h2 {
 
 @media (max-height: 690px) {
   .skills__container {
-    grid-auto-rows: calc(33.3333vh - 13.333px);
+    grid-auto-rows: calc(230px - 20px * 0.66666);
   }
 }
 
