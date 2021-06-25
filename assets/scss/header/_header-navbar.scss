@@ -27,7 +27,7 @@
     position: relative;
     margin: 25px auto;
     transform: rotate(0deg);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
   }
 }
@@ -83,15 +83,14 @@
   transform: rotate(-135deg);
 }
 @media screen and (max-width: 768px) {
-
   .header-navbar {
     display: flex;
     justify-content: flex-end;
   }
 
   .header-navbar__btn {
-      display: block;
-      margin: 0;
+    display: block;
+    margin: 0;
   }
 
   .header-menu {
@@ -110,6 +109,5 @@
     text-align: right;
     background-color: #44596ee6;
     box-shadow: -3px 3px 20px -10px #000000;
-    }
-
+  }
 }

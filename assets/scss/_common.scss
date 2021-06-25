@@ -61,8 +61,8 @@ h1 {
 
   @include lg-min {
     height: 60px;
-    min-width: 250px; 
-    font-size: 1.125rem; 
+    min-width: 250px;
+    font-size: 1.125rem;
   }
   @include lg-md {
     height: 50px;
@@ -70,7 +70,7 @@ h1 {
   }
   @include md {
     height: 40px;
-    min-width: 170px;  
+    min-width: 170px;
   }
 }
 .btn--light:hover {

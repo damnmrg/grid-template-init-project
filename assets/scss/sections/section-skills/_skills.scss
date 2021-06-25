@@ -6,7 +6,7 @@
   @include sm {
     padding: $gap;
   }
-  
+
   &__container {
     display: grid;
     grid-auto-rows: calc(33.3333vh - 13.333px);
@@ -27,12 +27,12 @@
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
       gap: $gap;
     }
-      @media (min-height: 691px) {
-        grid-auto-rows: calc(33.3333vh - 20px * 0.66666);
-      }
-      @media (max-height: 690px) {
-        grid-auto-rows: calc(230px - 20px * 0.66666);
-      } 
+    @media (min-height: 691px) {
+      grid-auto-rows: calc(33.3333vh - 20px * 0.66666);
+    }
+    @media (max-height: 690px) {
+      grid-auto-rows: calc(230px - 20px * 0.66666);
+    }
   }
   &__actions {
     display: flex;

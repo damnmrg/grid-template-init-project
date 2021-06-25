@@ -41,7 +41,8 @@
     font-size: 1.125rem;
     transition: background-color 0.5s, border-color 0.5s;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: rgba($color-light, 0.15);
       border: 2px solid rgba($color-light, 0.25);
       border-bottom-color: $color-light;

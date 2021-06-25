@@ -4,45 +4,45 @@
   background-color: $color-primary;
   color: $color-gray;
   &__container {
-      max-width: $ul;
-      margin: auto;
-      padding-left: $gap;
-      padding-right: $gap;
+    max-width: $ul;
+    margin: auto;
+    padding-left: $gap;
+    padding-right: $gap;
   }
   &__social {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(51px, max-content));
-      justify-content: center;
-      margin-bottom: 40px;
-      position: relative;
-      &::after {
-          position: absolute;
-          content: "";
-          background-color: rgba(255, 255, 255, 0.1);
-          width: 75px;
-          height: 2px;
-          bottom: (-$gap);
-          left: calc(50% - 75px / 2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(51px, max-content));
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 75px;
+      height: 2px;
+      bottom: (-$gap);
+      left: calc(50% - 75px / 2);
+    }
+    a {
+      padding: 10px;
+      transition: color 0.5s;
+      &:hover {
+        color: $color-accent;
       }
-      a {
-          padding: 10px;
-          transition: color 0.5s;
-          &:hover {
-              color: $color-accent;
-          }
-          .fab {
-            font-size: 36px;
-          }
+      .fab {
+        font-size: 36px;
       }
+    }
   }
   &__copy span:nth-of-type(1) {
-      margin-right: -0.5em;
-      letter-spacing: 0.33em;
-      font-weight: 100;
+    margin-right: -0.5em;
+    letter-spacing: 0.33em;
+    font-weight: 100;
   }
   &__copy span:nth-of-type(2) {
-      letter-spacing: 0.05em;
-      color: $color-gray-light;
-      font-weight: 700;
+    letter-spacing: 0.05em;
+    color: $color-gray-light;
+    font-weight: 700;
   }
 }

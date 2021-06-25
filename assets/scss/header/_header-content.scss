@@ -19,15 +19,15 @@
       flex-direction: column;
       align-items: center;
     }
-  .btn:first-of-type {
-    @include sm-min {
-      margin-right: $gap;
-    }
-    @include sm {
-      margin-bottom: $gap;
+    .btn:first-of-type {
+      @include sm-min {
+        margin-right: $gap;
+      }
+      @include sm {
+        margin-bottom: $gap;
+      }
     }
   }
-}
 
   &__container {
     @extend %container;
